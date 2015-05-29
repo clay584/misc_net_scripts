@@ -60,3 +60,12 @@ Output to File:
 ```
 
 ![Alt text](/create_cidr_tree.png?raw=true "CIDR Tree in D3.js Tree Graph")
+
+## DNS Updater
+
+CGI-BIN app for Windows IIS to update and delete forward and reverse DNS records from web form.  It uses dnscmd.exe to perform the actual updates.
+
+### Installation
+
+In order to use this, you must install python on Windows, IIS, enable CGI scripts.  Then place this in CGI-BIN and run.  Also, the user account that runs IIS must be a member of DNS Admins group in AD.  Yes I know this is risky, but it was for a lab environment.
+
