@@ -1,8 +1,8 @@
-# misc_net_scripts
+# Miscellaneous Network Scripts
 Miscellaneous network scripts for random tasks
 
-## create_cidr_tree.py
-This script creates a nested cidr block tree in nested JSON for use with the D3.js tree collapsable tree diagram.  Input the master CIDR block and the max length you want to go in depth.
+## Pretty IP Subnet Tree
+This script creates a CIDR block tree in nested JSON for use with the D3.js tree collapsable tree diagram.  Input the master CIDR block and the max length you want to go in depth.
 
 ### Example
 
