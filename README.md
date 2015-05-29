@@ -6,6 +6,7 @@ This script creates a nested cidr block tree in nested JSON for use with the D3.
 
 ### Example
 
+```
 [ccurtis@shark misc_net_scripts]$ ./create_cidr_tree.py --help
 usage: create_cidr_tree.py [-h] [--network PARENT_PREFIX]
                            [--max-prefix LENGTH]
@@ -17,7 +18,9 @@ optional arguments:
   --network PARENT_PREFIX
                         Parent CIDR block
   --max-prefix LENGTH   Maximum prefix length depth
+```
 
+```
 [ccurtis@shark misc_net_scripts]$ ./create_cidr_tree.py --network 10.1.1.0/24 --max-prefix 29
 {
   "children": [
@@ -49,9 +52,10 @@ optional arguments:
                   ],
                   "name": "10.1.1.16/28"
 ...output truncated...
+```
 
 Output to File:
-
+```
 [ccurtis@shark misc_net_scripts]$ ./create_cidr_tree.py --network 10.1.1.0/24 --max-prefix 29 > cidr_tree.json
-
+```
 
