@@ -59,3 +59,4 @@ Output to File:
 [ccurtis@shark misc_net_scripts]$ ./create_cidr_tree.py --network 10.1.1.0/24 --max-prefix 29 > cidr_tree.json
 ```
 
+![Alt text](/create_cidr_tree.png?raw=true "CIDR Tree in D3.js Tree Graph")
