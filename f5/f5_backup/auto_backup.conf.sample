@@ -1,0 +1,27 @@
+#F5 auto backup config file
+
+#Turn on DEBUGS
+DEBUG=1
+
+#F5 user account
+F5_ACCOUNT='admin'
+
+#file path the the private key used for authentication
+F5_KEY='/home/username/.ssh/id_rsa'
+
+#UCS archive passphrase
+UCS_PASSPHRASE='p@ssw0rd!'
+
+#List of devices to back up
+DEVICES=(
+	'ltm1.domain.com'
+	'ltm2.domain.com'
+	'gtm1.domain.com'
+	'gtm2.domain.com'
+	)
+
+#How many days of backups to keep
+DAYS_TO_KEEP='14'
+
+#Local path to store backup files
+BACKUP_DIR='/media/backups/f5_backups'
