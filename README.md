@@ -87,7 +87,8 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub backupuser@f5device.domain.com
 2) Specify the path the the user's .bash_profile and the location of the script config file at the top of auto_backup.sh.
 3) Modify the auto_backup.conf file to your liking, adding all of your F5 devices in the config file.
 4) Add this to your local user's crontab.
-```0 0 * * *	/path/to/backup/script/auto_backup.sh >> /path/to/backup/dir/auto_backup_`date +\%Y\%m\%d\%H\%M\%S`.log 2>&1
+```
+0 0 * * *	/path/to/backup/script/auto_backup.sh >> /path/to/backup/dir/auto_backup_`date +\%Y\%m\%d\%H\%M\%S`.log 2>&1
 ```
 
 ### Example Output
