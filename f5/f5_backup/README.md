@@ -1,6 +1,6 @@
 ## F5 Auto Backup
 
-This is a bash script to reach out via ssh and take ucs archives of F5 Big-IP devices and copy them off-box.  It also handles deleting of old ucs archives.
+This is a bash script to reach out via ssh and take ucs archives of F5 Big-IP devices and copy them off-box.  It also handles deleting of old ucs archives.  The advantage of doing it all on a remote server is that it survives F5 upgrades and the installation only has to occur on one device.
 
 ### Installation
 
