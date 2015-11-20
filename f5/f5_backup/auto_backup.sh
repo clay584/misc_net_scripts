@@ -40,7 +40,7 @@ source ~/.bashrc
 	if [ $DEBUG -eq 1 ] ; then
 		echo "creating ucs archive on ${CURRENT_HOST}..."
 	fi
-	tmsh -c 'save sys ucs "${CURRENT_HOST}"_"${F5_DATETIME}".ucs'
+	tmsh -c 'save sys ucs "${CURRENT_HOST}"_"${F5_DATETIME}".ucs passphrase "${UCS_PASSPHRASE}"'
 EOF
 
 	if [ $DEBUG -eq 1 ] ; then
